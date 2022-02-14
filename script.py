@@ -31,7 +31,9 @@ class MyWindow(Windows.Window):
 		datos = str(self.textbox.Text) + "\n" + str(self.textbox_2.Text)
 		self.archivo.write(datos)
 		print("Datos guardados correctamente")
+
 		self.archivo.close()
+		print("Archivo cerrado")
 
 	def limpiar_textbox(self, sender, args):
 		self.textbox.Text = ""
